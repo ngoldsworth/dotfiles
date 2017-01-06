@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec rofi -show run  -font "Monda 15" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
 #bindsym $mod+d exec rofi -show run  -font "RobotoSlab 20" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
 #bindsym $mod+d exec rofi -show run  -font "Montserrat 12" -padding 30 -bw 0 -bc "$text-color" -bg "$text-color" -fg "$bg-color" -hlbg "$text-color" 
-bindsym $mod+d exec rofi -show run  -font "RobotoSlab Light 20" -fullscreen -padding 250 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
+bindsym $mod+d exec rofi -show run  -font "RobotoSlab Light 20" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
 
 
 
