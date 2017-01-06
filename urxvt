@@ -1,5 +1,5 @@
-URxvt.font: xft:ProggyCleanTT:size=12
+URxvt.font: xft:SourceCodePro-Regular:size=10
 URxvt.scrollBar: false
-URxvt.internalBorder: 10
+URxvt.internalBorder: 25 
 
-#include "/home/nelson/.xres/termcolors/nightway"
+#include "/home/nelson/.xres/termcolors/nightway2"
