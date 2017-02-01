@@ -1,7 +1,8 @@
 #!/bin/sh
 
-echo $(date)
+
 while :
-do
+do 
+	echo $(date)
 	sleep 1
 done
