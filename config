@@ -47,8 +47,8 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec rofi -show run -font "Anonymous Pro 15" -fullscreen  -padding 400 -bc "$bg-color" -bg "$bg-color" -fg "$text-color"  -hlbg "$bg-color" -bw 0 
 #bindsym $mod+d exec rofi -show run  -font "ProggyCleanTT 12" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
 #bindsym $mod+d exec rofi -show run  -font "Monda 15" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
-bindsym $mod+d exec rofi -show run  -font "RobotoSlab 20" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
-#bindsym $mod+d exec rofi -show run  -font "Montserrat 12" -padding 30 -bw 0 -bc "$text-color" -bg "$text-color" -fg "$bg-color" -hlbg "$text-color" 
+#bindsym $mod+d exec rofi -show run  -font "RobotoSlab Light 20" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" 
+bindsym $mod+d exec rofi -show run  -font "Space Mono 16" -padding 30 -bw 0 -bc "$text-color" -bg "$text-color" -fg "$bg-color" -hlbg "$urgent-bg-color" 
 #bindsym $mod+d exec rofi -show run  -font "RobotoSlab Light 20" -fullscreen -padding 300 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -135,7 +135,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Yo, you hit the magic exit combo, you sure you wanna do that? ' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -164,11 +164,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-set $bg-color 	         #2c2928
-set $inactive-bg-color   #2c2928
-set $text-color          #aca8a4
-set $inactive-text-color #62605D
-set $urgent-bg-color     #E53935
+set $bg-color 	         #262626
+set $inactive-bg-color   #262626
+set $text-color          #c0b18b
+set $inactive-text-color #928374
+set $urgent-bg-color     #fb4934
 
 #------------------------- ORIGINAL WINDOW COLOR SETTINGS ---------------------------------#
 ## window colors
@@ -191,7 +191,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # bar
 bar {   
-	position bottom 
+	position top 
 	status_command i3blocks -c /home/nelson/.config/i3/i3blocks.conf	
 	colors {
 		background $bg-color
@@ -207,7 +207,7 @@ bar {
 bindsym $mod+Shift+x exec sh /home/nelson/.config/i3/lock2.sh
 
 #wallpaper
-exec_always feh --bg-scale /home/nelson/Pictures/rocks01.jpg
+exec_always feh --bg-scale /home/nelson/Pictures/zen-leaf.jpg
 
 #google
 bindsym $mod+g exec google-chrome-stable
@@ -223,9 +223,9 @@ bindsym $mod+Shift+s exec spotify
 
 #new window
 bindsym $mod+y border normal
-bindsym $mod+u border pixel 3 
+bindsym $mod+u border pixel 1 
 bindsym $mod+i border none
-new_window pixel 3
+new_window pixel 1
 
 #load ~/.Xresources
 exec_always xrdb ~/.Xresources
